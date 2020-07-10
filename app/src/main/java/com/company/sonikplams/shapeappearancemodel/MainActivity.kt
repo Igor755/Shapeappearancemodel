@@ -16,10 +16,14 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val radius = resources.getDimension(R.dimen.offset_12)
+        val radius = resources.getDimension(R.dimen.offset_8)
 
-        val triangleEdgeTreatment = TriangleEdgeTreatment(20F, false)
+        val triangleEdgeTreatment = TriangleEdgeTreatment(30F, false)
 
+        card.background = null
+        card.alpha = 0.8F
+
+        //card_view.alpha = 0.8F
 
         val shapeAppearanceModel = ShapeAppearanceModel()
             .toBuilder()
@@ -29,8 +33,6 @@ class MainActivity : AppCompatActivity() {
 
         val shapeDrawable = MaterialShapeDrawable(shapeAppearanceModel)
         ViewCompat.setBackground(card_view, shapeDrawable)
-
-
 
     }
 }

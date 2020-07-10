@@ -1,39 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:clipToPadding="false"
-    app:cardBackgroundColor="@android:color/transparent"
-    android:background="@android:color/transparent"
-    android:backgroundTint="@android:color/transparent"
+    android:id="@+id/card"
     android:clipChildren="false"
+    android:clipToPadding="false"
+    app:contentPadding="16dp"
     tools:context=".MainActivity">
 
-
     <LinearLayout
-        android:id="@+id/card_view"
-        android:padding="16dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:id="@+id/card_view"
+        android:padding="8dp"
+        android:gravity="center"
         android:orientation="vertical">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="8dp"
-            android:layout_gravity="center_horizontal"
             android:text="Удалить"
+            android:padding="6dp"
             android:textColor="@color/colorWhite" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="8dp"
-            android:layout_gravity="center_horizontal"
+            android:padding="6dp"
             android:text="Редактировать"
             android:textColor="@color/colorWhite" />
-    </LinearLayout>
+</LinearLayout>
 
 </com.google.android.material.card.MaterialCardView>

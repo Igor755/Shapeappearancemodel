@@ -5,6 +5,24 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="shapeAppearanceSmallComponent">@style/CustomSmallShapeAppearance</item>
+        <item name="shapeAppearanceMediumComponent">@style/CustomMediumShapeAppearance</item>
     </style>
 
+
+<!---->
+<!---->
+
+<style name="CustomSmallShapeAppearance">
+<item name="cornerFamily">cut</item>
+<item name="cornerSize">4dp</item>
+</style>
+<style name="CustomMediumShapeAppearance">
+<item name="cornerFamily">rounded</item>
+<item name="cornerSize">16dp</item>
+</style>
+<style name="CustomShapeAppearance">
+<item name="cornerFamily">cut</item>
+<item name="cornerSize">4dp</item>
+</style>
 </resources>
